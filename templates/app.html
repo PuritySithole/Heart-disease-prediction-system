@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<body>
+ <div class="login">
+	<h1>Heart Disease Prediction System</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action='/predict', method="POST">
+    	<input type="text" name="Age" placeholder="Age" required="required" />
+        <input type="text" name="Serum Cholesterol" placeholder="Serum Cholesterol" required="required" />
+		<input type="text" name="Trestbps" placeholder="Trestbps" required="required" />
+		<input type="text" name="Thalach" placeholder="Thalach" required="required" />
+		<input type="text" name="Old Peak" placeholder="Old Peak" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
+    </form>
+
+      <br>
+   <br>
+   {{ prediction}}
+</div>
+</body>
+</html>
