@@ -8,7 +8,7 @@ import os
 
 
 app = Flask(__name__, template_folder='templates')
-app.secret_key = c'_100#y2L"remembrancez\n\xec]/'
+app.config.update(TESTING=True,SECRET_KEY=['hey'])
 #model = pickle.load(open('model_naive.pkl', 'rb'))
 @app.route('/')
 def home():
